@@ -1,0 +1,13 @@
+[workspace]
+members = ["crates/optarith-sys", "crates/optarith"]
+resolver = "3"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.92"
+
+[workspace.dependencies]
+gmp-mpfr-sys = { version = "1.6", default-features = false }
+bindgen = "0.72"
+optarith-sys = { path = "crates/optarith-sys" }

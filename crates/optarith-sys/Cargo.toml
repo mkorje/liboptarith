@@ -1,0 +1,23 @@
+[package]
+name = "optarith-sys"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+links = "optarith_c"
+build = "build.rs"
+description = "Raw FFI bindings and bundled C build for liboptarith"
+publish = false
+
+[features]
+default = []
+
+[lib]
+name = "optarith_sys"
+path = "src/lib.rs"
+
+[dependencies]
+gmp-mpfr-sys = { workspace = true }
+
+[build-dependencies]
+bindgen = { workspace = true }
+gmp-mpfr-sys = { workspace = true }

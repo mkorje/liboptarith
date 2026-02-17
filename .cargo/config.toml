@@ -1,0 +1,4 @@
+[env]
+# Default maximum prime used by crates/optarith-sys/build.rs code generation.
+# Override this value locally if you want a different table size.
+OPTARITH_MAX_PRIME = "104729"

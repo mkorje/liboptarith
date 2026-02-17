@@ -1,0 +1,14 @@
+[package]
+name = "optarith"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+description = "Safe Rust wrappers for liboptarith"
+
+[features]
+default = ["gmp"]
+gmp = ["dep:gmp-mpfr-sys"]
+
+[dependencies]
+optarith-sys = { workspace = true }
+gmp-mpfr-sys = { workspace = true, optional = true }
