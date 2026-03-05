@@ -35,6 +35,7 @@
           llvmPackages_latest.libclang
           llvmPackages_latest.clang
           clang-tools
+          primesieve
         ];
       };
     };
